@@ -1,0 +1,151 @@
+/* ---------------------- */
+/* Tablets and large phones (≤768px) */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .full-title {
+    display: none; /* hide full title */
+  }
+  .short-title {
+    display: inline; /* show LNS */
+    font-size: 1.8rem;
+    font-weight: normal; /* ✅ always same as desktop */
+    letter-spacing: 1px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  nav {
+    margin-top: 5px;
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 0.95rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .hero-buttons a button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Features Section */
+  .features {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .feature-card {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Submit Form */
+  .form-section {
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+
+  form {
+    gap: 15px;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  /* Browse Page */
+  .search-bar input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .letters-grid {
+    grid-template-columns: 1fr; /* stack into 1 column */
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .letter-card {
+    width: 100%;
+  }
+
+  .letter-card h4 {
+    font-size: 0.95rem;
+  }
+
+  /* About Page */
+  .about-section {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+/* ---------------------- */
+/* Small phones (≤480px) */
+/* ---------------------- */
+@media (max-width: 480px) {
+  header {
+    padding: 12px 15px;
+  }
+
+  .short-title {
+    font-size: 1.5rem;
+    font-weight: normal; /* ✅ make sure NOT bold */
+  }
+
+  nav a {
+    font-size: 0.85rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem !important;
+    padding: 12px !important;
+  }
+}

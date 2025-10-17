@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdfcf7; /* warm off-white */
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #f2ede9;
+  border-bottom: 1px solid #e0dad4;
+}
+
+/* Titles */
+header h1 {
+  margin: 0;
+}
+
+.full-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #5b4636;
+}
+
+.short-title {
+  display: none;
+  font-weight: 800;       /* bolder for logo effect */
+  font-size: 1.8rem;      /* slightly larger */
+  color: #5b4636;
+  letter-spacing: 1px;
+}
+
+/* Nav links */
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #5b4636;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #7a6653;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .full-title {
+    display: none; /* hide full title */
+  }
+  .short-title {
+    display: inline; /* show LNS */
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+}
+
+
+/* About Section */
+.about {
+  padding: 80px 20px;
+  text-align: center;
+  background: #faf7f3;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #4d3b2d;
+}
+
+.about p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Mission & Vision */
+.mission {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.mission-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #f0ebe6;
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+}
+
+.mission-card h3 {
+  color: #5b4636;
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.mission-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2ede9;
+  border-top: 1px solid #e0dad4;
+  font-size: 0.9rem;
+  color: #5b4636;
+}
